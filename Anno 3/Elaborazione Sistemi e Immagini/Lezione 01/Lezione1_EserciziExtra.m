@@ -3,6 +3,7 @@
 % Docente Coordinatore: Marco Cristani
 % Lezione 1: esercizi extra 
 
+%% 
 clear all
 close all
 clc
@@ -17,7 +18,17 @@ clc
 % - Domanda. E' importante che i vettori siano definiti in riga o in colonna?
 
 
+v1 = [0 0];
+v2 = [1 1];
 
+distanza = sqrt(sum((v1-v2).^2))
+
+
+%%
+
+clear all 
+close all 
+clc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esercizio 5
@@ -29,5 +40,6 @@ clc
 % Suggerimento: una matrice simmetrica è uguale alla sua trasposta
 
 
-
+A = [1 2 3; 1 2 3];
+checkSym(A)
 

@@ -97,7 +97,10 @@ clc
 
 
 vec = 1:2:30;
-mat = [1:2:30;ones(1,15)];
+mat = [1:2:30;ones(1,15);16:30];
 vec_media = Mymean(vec);
-media_Matlab = mean(vec);
+media_Matlab = mean(vec');
 confronto = [vec_media; media_Matlab]
+
+
+
