@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.DipendenteController">
+   <children>
+      <VBox prefHeight="575.0" prefWidth="240.0" style="-fx-background-color: #4B93EA;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#inserisciDati" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4B93EA #4B93EA #4B93EA #4B93EA;" text="Inserisci Lavoratore" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/plus.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding></Button>
+            <Button fx:id="visualizzaButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#visualizzaDati" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4B93EA #4B93EA;" text="Visualizza Lavoratori" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/eye.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4689db #4689db;" text="Dipendente" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/person.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="268.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4B93EA #4B93EA;" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/arrow.left.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="275.0" layoutY="23.0" prefHeight="35.0" prefWidth="346.0" text="Dati del Dipendente" textFill="#4b93ea">
+         <font>
+            <Font name="Helvetica Neue" size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="comuneNascitaText" fill="#4b93ea" layoutX="555.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luogo di Nascita">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fx:id="regioneNascitaText1" fill="#4b93ea" layoutX="337.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fx:id="regioneNascitaText11" fill="#4b93ea" layoutX="568.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fx:id="regioneNascitaText111" fill="#4b93ea" layoutX="843.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fx:id="regioneNascitaText1111" fill="#4b93ea" layoutX="303.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di nascita">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Button fx:id="showPassword" layoutX="783.0" layoutY="260.0" mnemonicParsing="false" onAction="#viewPassword" prefHeight="26.0" prefWidth="195.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Mostra Password" textFill="WHITE" />
+      <Label fx:id="nomeLabel" alignment="CENTER" layoutX="264.0" layoutY="179.0" prefHeight="20.0" prefWidth="195.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="cognomeLabel" alignment="CENTER" layoutX="509.0" layoutY="179.0" prefHeight="20.0" prefWidth="195.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" alignment="CENTER" layoutX="725.0" layoutY="179.0" prefHeight="22.0" prefWidth="279.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dataNascitaLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="297.0" prefHeight="22.0" prefWidth="158.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="luogoNascitaLabel" alignment="CENTER" layoutX="482.0" layoutY="294.0" prefHeight="22.0" prefWidth="279.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" alignment="CENTER" layoutX="773.0" layoutY="294.0" prefHeight="20.0" prefWidth="205.0" text="***">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

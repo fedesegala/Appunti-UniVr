@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.FiltersController">
+   <children>
+      <Text fill="#4b93ea" layoutX="124.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Impostare i filtri desiderati" textAlignment="CENTER" wrappingWidth="374.3724136352539">
+         <font>
+            <Font name="Helvetica Neue" size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="283.0" layoutY="296.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #4b93ea#4b93ea; -fx-background-radius: 50;" text="Applica Filtri di ricerca" textFill="WHITE" />
+      <TextField fx:id="nomeField" layoutX="33.0" layoutY="91.0" />
+      <TextField fx:id="cognomeField" layoutX="225.0" layoutY="92.0" />
+      <CheckComboBox fx:id="lingueCombo" layoutX="412.0" layoutY="92.0" prefHeight="26.0" prefWidth="162.0" />
+      <DatePicker fx:id="inizioPicker" editable="false" layoutX="32.0" layoutY="165.0" promptText="inizio disponibilita" />
+      <DatePicker fx:id="finePicker" editable="false" layoutX="230.0" layoutY="165.0" promptText="fine disponibilita" />
+      <TextField fx:id="mansionefield" layoutX="427.0" layoutY="166.0" />
+      <TextField fx:id="luogoField" layoutX="32.0" layoutY="246.0" />
+      <CheckComboBox fx:id="patenteCombo" layoutX="224.0" layoutY="246.0" prefHeight="26.0" prefWidth="140.0" />
+      <CheckBox fx:id="automunitoCheckBox" layoutX="399.0" layoutY="229.0" mnemonicParsing="false" onAction="#updateAutomunito" text="Ricerca per Automunito" textFill="#4b93ea" />
+      <ComboBox fx:id="automunitoCombobox" layoutX="443.0" layoutY="246.0" prefHeight="26.0" prefWidth="79.0" />
+      <CheckBox fx:id="tipoRicercaCheckBox" layoutX="70.0" layoutY="332.0" mnemonicParsing="false" text="Tipo di Ricerca" textFill="#4b93ea" />
+      <Button layoutX="458.0" layoutY="295.0" mnemonicParsing="false" onAction="#clear" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: ff3838; -fx-background-radius: 50;" text="pulisci filtri" textFill="WHITE" />
+      <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="463.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/delete.left.fill@2x.png" />
+         </image>
+      </ImageView>
+      <Text fill="#4b93ea" layoutX="32.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" textAlignment="CENTER" wrappingWidth="162.0" />
+      <Text fill="#4b93ea" layoutX="225.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome" textAlignment="CENTER" wrappingWidth="162.0" />
+      <Text fill="#4b93ea" layoutX="411.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lingue Parlate" textAlignment="CENTER" wrappingWidth="162.0" />
+      <Text fill="#4b93ea" layoutX="35.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inizio Disponiblita" textAlignment="CENTER" wrappingWidth="183.0" />
+      <Text fill="#4b93ea" layoutX="233.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Disponibilta" textAlignment="CENTER" wrappingWidth="183.0" />
+      <Text fill="#4b93ea" layoutX="427.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mansioni Svolte" textAlignment="CENTER" wrappingWidth="162.0" />
+      <Text fill="#4b93ea" layoutX="32.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luogo Di Residenza" textAlignment="CENTER" wrappingWidth="162.0" />
+      <Text fill="#4b93ea" layoutX="224.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patenti" textAlignment="CENTER" wrappingWidth="140.0" />
+      <Text fill="#4b93ea" layoutX="35.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona per cercare in AND, lascia vuoto per cercare in OR" textAlignment="CENTER" wrappingWidth="183.0" />
+   </children>
+</AnchorPane>

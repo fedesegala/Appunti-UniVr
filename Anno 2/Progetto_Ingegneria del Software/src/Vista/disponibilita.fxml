@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.DisponibilitaController">
+   <children>
+      <TableView fx:id="disponibilitaTable" layoutX="47.0" layoutY="266.0" onMouseClicked="#rowClicked" prefHeight="224.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="inizioTable" prefWidth="104.8537368774414" style="-fx-background-color-fx-background-color: #005fac;" text="inizio" />
+            <TableColumn fx:id="fineTable" minWidth="0.0" prefWidth="136.83164978027344" style="-fx-background-color-fx-background-color: #005fac;" text="fine" />
+            <TableColumn fx:id="comuneTable" prefWidth="275.6684265136719" style="-fx-background-color-fx-background-color: #005fac;" text="comune" />
+        </columns>
+      </TableView>
+      <Text fill="#4b93ea" layoutX="44.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aggiungi i Periodi e le zone di Disponibilità" wrappingWidth="563.2804946899414">
+         <font>
+            <Font name="Helvetica Neue" size="21.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="inizioPicker" editable="false" layoutX="41.0" layoutY="83.0" onAction="#hideInizioError" prefHeight="25.0" prefWidth="175.0" promptText="data inizio" />
+      <DatePicker fx:id="finePicker" editable="false" layoutX="325.0" layoutY="84.0" onAction="#hideFineError" prefHeight="25.0" prefWidth="175.0" promptText="data fine" />
+      <ComboBox fx:id="regioneBox" layoutX="47.0" layoutY="169.0" onShown="#hideComuneError" prefHeight="25.0" prefWidth="155.0" />
+      <ComboBox fx:id="provinciaBox" layoutX="214.0" layoutY="169.0" onAction="#hideComuneError" onShown="#hideComuneError" prefHeight="25.0" prefWidth="178.0" />
+      <ComboBox fx:id="comuneBox" layoutX="405.0" layoutY="169.0" onAction="#hideComuneError" prefHeight="25.0" prefWidth="155.0" />
+      <Button fx:id="aggiungiButton" layoutX="390.0" layoutY="231.0" mnemonicParsing="false" onAction="#addDisponibilita" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: #4b93ea#4b93ea; -fx-background-radius: 50;" text="Aggiungi Disponibilità" textFill="WHITE" />
+      <Button layoutX="75.0" layoutY="507.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #4b93ea#4b93ea; -fx-background-radius: 50;" text="Salva" textFill="WHITE" />
+      <Button fx:id="cancellaButton" layoutX="235.0" layoutY="232.0" mnemonicParsing="false" onAction="#clear" prefHeight="26.0" prefWidth="145.0" style="-fx-background-color: ff3838; -fx-background-radius: 50;" text="Cancella Tutto" textFill="WHITE" />
+      <Label fx:id="inizioError" alignment="CENTER" layoutX="42.0" layoutY="113.0" prefHeight="17.0" prefWidth="175.0" textFill="#ff3838" />
+      <Label fx:id="fineError" alignment="CENTER" layoutX="328.0" layoutY="115.0" prefHeight="17.0" prefWidth="175.0" textFill="#ff3838" />
+      <Label fx:id="comuneError" alignment="CENTER" layoutX="46.0" layoutY="199.0" prefHeight="17.0" prefWidth="514.0" textFill="#ff3838" />
+      <Text fill="#4b93ea" layoutX="48.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disponibilità Registrate" wrappingWidth="166.0">
+         <font>
+            <Font name="Helvetica Neue" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="regioneNascitaText" fill="#4b93ea" layoutX="43.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inizio Periodo" />
+      <Text fx:id="regioneNascitaText2" fill="#4b93ea" layoutX="327.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Periodo" />
+      <Text fx:id="regioneNascitaText222" fill="#4b93ea" layoutX="47.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regione" />
+      <Text fx:id="regioneNascitaText2221" fill="#4b93ea" layoutX="217.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia" />
+      <Text fx:id="regioneNascitaText22211" fill="#4b93ea" layoutX="405.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comune" />
+      <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="241.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/delete.left.fill@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="544.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/plus.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" layoutX="307.0" layoutY="507.0" mnemonicParsing="false" onAction="#clearDisponibilita" prefHeight="26.0" prefWidth="241.0" style="-fx-background-color: ff3838; -fx-background-radius: 50;" text="Cancella Disponibilità Selezionata" textFill="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="524.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/trash.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VisualizzaController">
+   <children>
+      <VBox prefHeight="575.0" prefWidth="240.0" style="-fx-background-color: #4B93EA;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="inserisciButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#inserisciDati" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4B93EA #4B93EA;" text="Inserisci Lavoratore" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/plus.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4689db;" text="Visualizza Lavoratori" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/eye.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" onAction="#datiDipendente" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4B93EA #4B93EA;" text="Dipendente" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/person.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logoutButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="268.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="54.0" prefWidth="239.0" style="-fx-background-color: #4B93EA #4B93EA;" text="Logout" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/arrow.left.circle.fill@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="lavoratoriTableView" layoutX="281.0" layoutY="154.0" onMouseClicked="#rowClicked" prefHeight="256.0" prefWidth="696.0">
+        <columns>
+          <TableColumn fx:id="nomeColumn" prefWidth="109.0" text="Nome" />
+          <TableColumn fx:id="cognomeColumn" prefWidth="115.0" text="Cognome" />
+            <TableColumn fx:id="emailColumn" prefWidth="141.0" text="email" />
+            <TableColumn fx:id="nazionalitaColumn" prefWidth="130.0" text="Nazionalità" />
+            <TableColumn fx:id="residenzaColumn" prefWidth="211.0" text="Luogo di Residenza" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" />
+        </columns>
+      </TableView>
+      <Label layoutX="265.0" layoutY="88.0" text="Cerca" textFill="#4b93ea">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cercaTextField" layoutX="343.0" layoutY="92.0" prefHeight="26.0" prefWidth="275.0" promptText="cerca per nome,cognome,  esperienze..." />
+      <Label fx:id="nomeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="518.0" prefHeight="23.0" prefWidth="123.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cognomeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="552.0" prefHeight="23.0" prefWidth="123.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="esperienzeButton" layoutX="398.0" layoutY="550.0" mnemonicParsing="false" onAction="#showEsperienze" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Esperienze Lavorative" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button fx:id="lingueButton" layoutX="590.0" layoutY="516.0" mnemonicParsing="false" onAction="#showLingue" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Lingue Parlate" textFill="WHITE" />
+      <Button fx:id="patentiButton" layoutX="783.0" layoutY="516.0" mnemonicParsing="false" onAction="#showPatenti" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Patenti" textFill="WHITE" />
+      <Button fx:id="contattiButton" layoutX="783.0" layoutY="550.0" mnemonicParsing="false" onAction="#showContatti" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Contatti Emergenza" textFill="WHITE" />
+      <Button fx:id="disponibilitaButton" layoutX="590.0" layoutY="550.0" mnemonicParsing="false" onAction="#showDisponibilita" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Disponibilità" textFill="WHITE" />
+      <Text fx:id="scegliText" fill="#4b93ea" layoutX="554.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scegli cosa visualizzare/Modificare">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="selectionText" fill="#4b93ea" layoutX="274.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hai Selezionato" textAlignment="CENTER" wrappingWidth="99.6708984375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="generalitaButton" layoutX="399.0" layoutY="516.0" mnemonicParsing="false" onAction="#showGeneralita" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Generalità" textFill="WHITE" />
+      <ImageView fx:id="imgesp" fitHeight="20.0" fitWidth="23.0" layoutX="546.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/paperclip.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imglang" fitHeight="20.0" fitWidth="23.0" layoutX="737.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/speaker.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgem" fitHeight="20.0" fitWidth="23.0" layoutX="931.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/person.2.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgpat" fitHeight="20.0" fitWidth="23.0" layoutX="931.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/car.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgdisp" fitHeight="20.0" fitWidth="23.0" layoutX="737.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/clock.fill@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgusr" fitHeight="20.0" fitWidth="23.0" layoutX="545.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/person.crop.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="generalitaButton1" layoutX="662.0" layoutY="92.0" mnemonicParsing="false" onAction="#filtraRicerca" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #4B93EA #4B93EA; -fx-background-radius: 50;" text="Filtri di Ricerca" textFill="WHITE" />
+      <ImageView fx:id="imgusr1" fitHeight="20.0" fitWidth="23.0" layoutX="809.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/bookmark.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancellaButton" alignment="CENTER" layoutX="714.0" layoutY="582.0" mnemonicParsing="false" onAction="#clearLavoratore" prefHeight="26.0" prefWidth="241.0" style="-fx-background-color: ff3838; -fx-background-radius: 50;" text="Cancella lavoratore selezionato" textFill="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="931.0" layoutY="585.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/trash.circle.fill@2x.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="262.0" layoutY="14.0" prefHeight="35.0" prefWidth="346.0" text="Visualizza i Lavoratori Salvati" textFill="#4b93ea">
+         <font>
+            <Font name="Helvetica Neue" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="49.0" prefHeight="23.0" prefWidth="668.0" text="Scrivi per fare una ricerca veloce (ricerca singola), applica i filtri per una ricerca avanzata">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

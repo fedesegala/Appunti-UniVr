@@ -1,0 +1,6 @@
+email;nome;cognome;comune/provincia/regione;giorno/mese/anno;nazionalita;comune/provincia/regione;indirizzo;telefono;automunito;lingue;patente
+emma.m@gmail.com;Emma;Marzellotta;Brozolo,Torino,Piemonte;02/09/2002;Italiana;Balangero,Torino,Piemonte;Via Luigi Prina 42;3311156743;true;Bielorusso/Italiano/Inglese/;A2/B/
+sara.rov@libero.it;Sara;Rovaglia;Albettone,Vicenza,Veneto;02/09/2002;Italiana;Altissimo,Vicenza,Veneto;Via Messedaglia 32;33448907;false;Italiano/Bielorusso/Cinese/;B/
+luigi.rai@gmail.com;Mariano;Rainone;Antey-Saint-André,Valle d'Aosta/Vallée d'Aoste,Valle d'Aosta/Vallée d'Aoste;06/09/2006;Italiana;Aosta,Valle d'Aosta/Vallée d'Aoste,Valle d'Aosta/Vallée d'Aoste;Via Sondrio 123;3323343432;true;Ceco/;null
+alessandro.marcato@outlook.com;Alessandro;Marcato;Milano,Milano,Lombardia;01/09/1995;Italiana;Monza,Monza e della Brianza,Lombardia;Via Rossi 3;3316829934;true;Italiano/Inglese/Bulgaro/;B/
+lupo.lucio@gmail.com;Lupo;Lucio;Agra,Varese,Lombardia;09/07/2004;Italiana;Antey-Saint-André,Valle d'Aosta/Vallée d'Aoste,Valle d'Aosta/Vallée d'Aoste;Via Sommacampagna 72;3312556789;false;Albanese/Cinese/Danese/;D1/A/B/
