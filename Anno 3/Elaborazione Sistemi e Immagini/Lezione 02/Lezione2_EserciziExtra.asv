@@ -97,46 +97,19 @@ clc
 % - Domanda: qual’è il canale con più valori diversi?
 %   Suggerimento: contare i valori dell'istogramma diversi da zero
 
-% da vedere risposta alla domanda
-
 I = imread('peppers.png');
-figure(1)
-imshow(I);
-
 red = I(:,:,1);
 green = I(:,:,2);
 blue = I(:,:,3);
 dim = size(I);
 
-figure (2)
-subplot(3,1,1);
-red_y = zeros(1,256);
-for i = 1:dim(1)
-    for j=1:dim(2)
-        red_y(1, red(i,j) + 1) = red_y(1, red(i,j) + 1) + 1;
-    end
-end
+figure (1)
+subplot(1,3,1);
 
-bar(red_y,'red');
+subplot(1,3,2);
 
-subplot(3,1,2);
-green_y = zeros(1,256);
-for i = 1:dim(1)
-    for j=1:dim(2)
-        green_y(1, green(i,j) + 1) = green_y(1, green(i,j) + 1) + 1;
-    end
-end
 
-bar(green_y,'green');
-
-subplot(3,1,3);
-blue_y = zeros(1,256);
-for i = 1:dim(1)
-    for j=1:dim(2)
-        blue_y(1, blue(i,j) + 1) = blue_y(1, blue(i,j) + 1) + 1;
-    end
-end
-
-bar(blue_y);
+subplot(1,3,3);
+bar(blue);
 
 
