@@ -1,0 +1,92 @@
+\contentsline {chapter}{\numberline {1} Elettrostatica nel Vuoto}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduzione all'Elettrostatica}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Fatti Sperimentali}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Elettrizzazione per Strofinio}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Elettrizzazione per Induzione}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Elettrizzazione per Contatto}{3}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Natura dei Materiali}{3}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Forza Elettrostatica e Legge di Coulomb}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Fatti Sperimentali}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Generalizzazione a un sistema di n cariche}{5}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Campo Elettrostatico}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Energia Elettrostatica}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Linee di Campo}{7}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Campo Potenziale Elettrostatico}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Calcolo Potenziale Elettrostatico}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Superfici Equipotenziali}{9}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Relazione Cariche - Campo - Potenziale}{10}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Carica Puntiforme}{10}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Sistema di n cariche discrete}{11}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Riassumendo...}{12}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Teorema di Gauss}{12}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Angolo Solido}{13}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Flusso del campo elettrostatico}{14}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Enunciato del Teorema}{14}{subsection.1.7.3}%
+\contentsline {paragraph}{Calcolo del campo di due piani indefiniti}{15}{section*.2}%
+\contentsline {section}{\numberline {1.8}Elettrostatica nei Conduttori}{16}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Proprietà dei Conduttori in Equilibrio}{16}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Cavità in un Conduttore}{17}{subsection.1.8.2}%
+\contentsline {section}{\numberline {1.9}Capacità Elettrostatica}{17}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}Conduttore Isolato}{18}{subsection.1.9.1}%
+\contentsline {subsection}{\numberline {1.9.2}Condensatore}{18}{subsection.1.9.2}%
+\contentsline {subsection}{\numberline {1.9.3}Collegamento di Condensatori}{19}{subsection.1.9.3}%
+\contentsline {paragraph}{Collegamento in Serie}{19}{section*.3}%
+\contentsline {paragraph}{Collegamento in Parallelo}{19}{section*.4}%
+\contentsline {paragraph}{Partitore Capacitivo}{20}{section*.5}%
+\contentsline {subsection}{\numberline {1.9.4}Energia Immagazzinata nel Capacitore}{20}{subsection.1.9.4}%
+\contentsline {section}{\numberline {1.10}Elettrostatica nei Dielettrici}{21}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Condensatore riempito di Dielettrico}{23}{subsection.1.10.1}%
+\contentsline {paragraph}{Calcolo delle Cariche di Polarizzazione}{23}{section*.6}%
+\contentsline {subsection}{\numberline {1.10.2}Dielettrici Lineari}{24}{subsection.1.10.2}%
+\contentsline {subsection}{\numberline {1.10.3}Teorema di Gauss per i Dielettrici}{24}{subsection.1.10.3}%
+\contentsline {subsection}{\numberline {1.10.4}Riassunto}{25}{subsection.1.10.4}%
+\contentsline {section}{\numberline {1.11}Energia Elettrostatica}{26}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Distribuzione discreta di cariche}{26}{subsection.1.11.1}%
+\contentsline {subsection}{\numberline {1.11.2}Distribuzione continua di cariche}{27}{subsection.1.11.2}%
+\contentsline {subsection}{\numberline {1.11.3}Sistema di conduttori}{27}{subsection.1.11.3}%
+\contentsline {paragraph}{Due conduttori in induzione completa}{28}{section*.7}%
+\contentsline {subsection}{\numberline {1.11.4}Densità di Energia Elettrostatica}{28}{subsection.1.11.4}%
+\contentsline {section}{\numberline {1.12}Dipolo Elettrico}{28}{section.1.12}%
+\contentsline {subsection}{\numberline {1.12.1}Dipolo Elettrico in un campo esterno costante}{30}{subsection.1.12.1}%
+\contentsline {section}{\numberline {1.13}Equazioni di Maxwell per l'elettrostatica}{31}{section.1.13}%
+\contentsline {chapter}{\numberline {2}Elettrodinamica}{33}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Conduzione Elettrica}{33}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Corrente Elettrica e Forza Elettromotrice}{33}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Intensità di Corrente}{34}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Corrente Stazionaria}{36}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Legge di Ohm}{36}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Legge di Ohm Locale}{37}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Potenza Elettrica - Effetto Joule}{38}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Bilancio Energetico di un Circuito}{38}{subsection.2.3.1}%
+\contentsline {paragraph}{Osservazione}{39}{section*.8}%
+\contentsline {section}{\numberline {2.4}Collegamento di Resistori}{40}{section.2.4}%
+\contentsline {paragraph}{Collegamento in Serie}{40}{section*.9}%
+\contentsline {paragraph}{Collegamento in Parallelo}{41}{section*.10}%
+\contentsline {paragraph}{Partitore Resistivo}{41}{section*.11}%
+\contentsline {subsection}{\numberline {2.4.1}Potenze}{42}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Leggi di Kirchhoff}{43}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Carica e Scarica di un Condensatore}{44}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Il Magnetismo Stazionario}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduzione alla Magnetostatica}{47}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fatti Sperimentali}{47}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Forza di Lorentz}{48}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Dipolo Magnetico in campo esterno $\vec {B}$ }{49}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Teorema di Ampere}{50}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Azione Meccanica tra Correnti}{51}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Flusso del Campo Magnetico B}{52}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Mutua Induzione}{52}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Autoinduzione}{52}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}1° Legge Elementare di Laplace}{53}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Energia del Campo Magnetico}{53}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Induzione Elettromagnetica}{55}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Fatti Sperimentali}{55}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Legge del flusso di Faraday}{56}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Legge di Lenz}{57}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Causa della forza elettromotrice indotta}{57}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Autoinduzione - circuito RL}{58}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Leggi di Accensione e Spegnimento del Circuito RL}{59}{subsection.4.3.1}%
+\contentsline {paragraph}{Accensione}{59}{section*.12}%
+\contentsline {paragraph}{Spegnimento}{59}{section*.13}%
+\contentsline {subsection}{\numberline {4.3.2}Bilancio Energetico}{60}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Energia di un Sistema di Correnti}{60}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Equazioni di Maxwell}{61}{section.4.5}%
